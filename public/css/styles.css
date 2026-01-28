@@ -1,0 +1,54 @@
+/* Custom styles for Supermarket App */
+:root{
+  --brand:#0d6efd;
+  --muted:#6c757d;
+  --bg:#f8f9fa;
+}
+html,body{
+  height:100%;
+}
+body{
+  background:var(--bg);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color:#212529;
+}
+.navbar-brand{
+  font-weight:700;
+  letter-spacing:0.3px;
+}
+.container{
+  padding-top:1.25rem;
+  padding-bottom:2rem;
+}
+h2{color:var(--brand);}
+
+/* Product images */
+img.img-thumbnail{object-fit:cover}
+
+.card-product{
+  border:1px solid rgba(0,0,0,0.05);
+  border-radius:8px;
+  padding:0.75rem;
+  background:#fff;
+}
+
+/* Tables */
+.table thead th{background:#fff;border-bottom:2px solid #e9ecef}
+
+/* Forms */
+.form-control:focus{box-shadow:0 0 0 0.15rem rgba(13,110,253,0.15)}
+
+/* Footer */
+.site-footer{
+  margin-top:3rem;
+  padding:1rem 0;
+  background:transparent;
+  color:var(--muted);
+  font-size:0.9rem;
+  text-align:center;
+}
+
+/* Responsive tweaks */
+@media (max-width:576px){
+  .table{font-size:0.9rem}
+}
